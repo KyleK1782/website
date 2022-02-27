@@ -4,4 +4,11 @@ title: About
 permalink: /about/
 ---
 
-This website is cool!
+## Author
+Kyle Knobloch
+
+## Why?
+This is a project for a Honors Project at Carleton University.
+
+### Thesis
+[Thesis](https://kyleknobloch.ca/thesis.pdf)

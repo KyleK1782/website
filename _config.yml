@@ -38,8 +38,9 @@ plugins:
 
 # Theme specific:
 navbar-links:
-  Home: "index"
+  Check Public Key: "index"
   Email Alerts: "emails"
+  API: "api"
   About: "about"
 
 
