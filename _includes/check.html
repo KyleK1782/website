@@ -1,0 +1,27 @@
+<style>
+#check
+{
+  line-height: 400px;
+  text-align:center;
+  vertical-align:middle;
+}
+
+#frm
+{
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 14px;
+}</style>
+<div id="check">
+  <form action="/check" id="frm" method="get">
+    <label for="pubkey">Public Key </label>
+    <input type="text" id="pubkey" name="pubkey" value=""><br>
+    <label for="cryptocurrency">Choose a Cryptopcurrency:</label>
+    <select id="cryptocurrency" name="cryptocurrency">
+      <option value="BTC">BTC</option>
+      <option value="ETH">ETH</option>
+      <option value="DOGE">DOGE</option>
+    </select><br>
+    <input type="submit" id ="submit" value="Submit">
+  </form>
+</div>
