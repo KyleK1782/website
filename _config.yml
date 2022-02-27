@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
@@ -19,6 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Has My Wallet Been Pwned?
+author: Kyle Knobloch
 email: info@hasmywalletbeenpwned.com
 description: >- # this means to ignore newlines until "baseurl:"
   Has My Wallet Been Pwned? A quick way to ensure your wallet's private key hasn't been leaked somewhere!
@@ -28,10 +29,37 @@ url: "https://test.hasmywalletbeenpwned.com" # the base hostname & protocol for 
 github_username: KyleK1782
 
 # Build settings
-theme: minima
+#theme: minima
+#theme: beautiful-jekyll-theme
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
 
+# Theme specific:
+navbar-links:
+  Home: "index"
+  Email Alerts: "emails"
+  About: "about"
+
+
+# --- Logo --- #
+
+# Image to show in the navigation bar - works best with a square image
+# Remove this parameter if you don't want an image in the navbar
+#avatar: "/assets/img/avatar-icon.png"
+
+navbar-col: "#EAEAEA"
+navbar-text-col: "#404040"
+navbar-border-col: "#DDDDDD"
+page-col: "#FFFFFF"
+text-col: "#404040"
+link-col: "#008AFF"
+hover-col: "#0085A1"
+footer-col: "#EAEAEA"
+footer-text-col: "#777777"
+footer-link-col: "#404040"
+footer-hover-col: "#0085A1"
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
