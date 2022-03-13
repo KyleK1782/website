@@ -1,4 +1,5 @@
-<footer>
+</div> <!-- this is added to remove the container-md class="main" div that restricts the size of the footer on the index page.  -->
+<footer style="background: #fff">
   <div class="container-md beautiful-jekyll-footer">
     <div class="row">
       <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
@@ -15,7 +16,7 @@
         {{ site.author }}
         &nbsp;&bull;&nbsp;
       {% endif %}
-      {{ site.time | date: '%Y' }}
+      &copy; {{ site.time | date: '%Y' }}
 
       {% if site.url-pretty %}
         &nbsp;&bull;&nbsp;
@@ -34,6 +35,9 @@
       {% unless site.remove-ads %}<p class="theme-by text-muted">
         Powered by
         <a href="https://beautifuljekyll.com">Beautiful Jekyll</a>
+        and
+
+        <a href="https://getbootstrap.com">Bootstrap</a>
       </p>{% endunless %}
       </div>
     </div>

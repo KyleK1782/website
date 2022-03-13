@@ -6,4 +6,4 @@ layout: home
 title: Has My Wallet Been Pwned?
 ---
 
-<center>Has your crypto wallet been pwned? You can check here by entering your public key below</center>
+<center>Has your crypto wallet been pwned? You can check here by entering your public key.</center>

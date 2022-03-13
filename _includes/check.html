@@ -1,27 +1,22 @@
-<style>
-#check
-{
-  line-height: 400px;
-  text-align:center;
-  vertical-align:middle;
-}
-
-#frm
-{
-  display: inline-block;
-  vertical-align: middle;
-  line-height: 14px;
-}</style>
-<div id="check">
-  <form action="/check" id="frm" method="get">
-    <label for="pubkey">Public Key </label>
-    <input type="text" id="pubkey" name="pubkey" value=""><br>
-    <label for="cryptocurrency">Choose a Cryptopcurrency:</label>
-    <select id="cryptocurrency" name="cryptocurrency">
-      <option value="BTC">BTC</option>
-      <option value="ETH">ETH</option>
-      <option value="DOGE">DOGE</option>
-    </select><br>
-    <input type="submit" id ="submit" value="Submit">
-  </form>
+<div class="container" style="padding-top: 75px;">
+  <div class="row justify-content-center">
+    <div class="col-7">
+      <form action="/check" method="get" class="form-floating">
+        <div class="mb-3">
+          <label for="pubkey">Public Key </label>
+          <input class="form-control" type="text" id="pubkey" name="pubkey" value="">
+        <div class="mb-3" style="padding-top: 10px;">
+          <label class="form-label" for="cryptocurrency">Cryptopcurrency:</label>
+          <select class="form-select" id="cryptocurrency" name="cryptocurrency">
+            <option value="BTC">BTC</option>
+            <option value="ETH">ETH</option>
+            <option value="DOGE">DOGE</option>
+          </select>
+        </div>
+        <div class="d-grid gap-3 col-10 mx-auto" style="padding-top: 15px;">
+          <button type="submit" class="btn btn-outline-success btn-lg">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
 </div>

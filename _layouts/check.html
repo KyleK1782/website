@@ -14,10 +14,10 @@ layout: base
           {% endfor %}
         </div>
       {% endif %}
+            {% include checkresults.html %}
 
       {{ content }}
 
-      {% include checkresults.html %}
 
       {% if page.after-content %}
         <div class="after-content">
