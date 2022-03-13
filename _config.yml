@@ -80,3 +80,8 @@ footer-hover-col: "#0085A1"
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+sass:
+  load_paths:
+    - _sass
+    - /home/fredg/gems/gems/bootstrap-5.1.3/assets/stylesheets
