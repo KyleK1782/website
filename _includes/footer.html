@@ -1,0 +1,38 @@
+</div> <!-- this is added to remove the container-md class="main" div that restricts the size of the footer on the index page.  -->
+<footer style="background: #fff">
+  <div class="container-md beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+      {% if page.footer-extra %}
+        <div class="footer-custom-content">
+          {% for file in page.footer-extra %}
+            {% include {{ file }} %}
+          {% endfor %}
+        </div>
+      {% endif %}
+      <p class="copyright text-muted">
+      {% if site.author %}
+        {{ site.author }}
+        &nbsp;&bull;&nbsp;
+      {% endif %}
+      &copy; {{ site.time | date: '%Y' }}
+
+      {% if site.url-pretty %}
+        &nbsp;&bull;&nbsp;
+        <span class="author-site">
+          <a href="{% if site.url-canonical %}{{ site.url-canonical }}{% else %}{{ '' | absolute_url }}{% endif %}">{{ site.url-pretty }}</a>
+        </span>
+      {% endif %}
+
+      </p>
+      {% unless site.remove-ads %}<p class="theme-by text-muted">
+        Powered by
+        <a href="https://beautifuljekyll.com">Beautiful Jekyll</a>
+        and
+
+        <a href="https://getbootstrap.com">Bootstrap</a>
+      </p>{% endunless %}
+      </div>
+    </div>
+  </div>
+</footer>
