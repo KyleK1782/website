@@ -39,7 +39,7 @@ plugins:
 # Theme specific:
 navbar-links:
   Check Public Key: "index"
-  Email Alerts: "emails"
+  #Email Alerts: "emails" #Coming soon!
   API: "api"
   About: "about"
 
